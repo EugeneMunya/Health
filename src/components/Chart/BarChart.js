@@ -1,11 +1,9 @@
 import { Flex } from '@chakra-ui/react';
 import React from 'react';
 
-import { Box, Spinner } from '@chakra-ui/react';
 import { Chart as ChartJS } from 'chart.js/auto'
-import { Fragment } from 'react';
 import { Chart } from 'react-chartjs-2'
-import { Bar, Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
 
 export const options = {

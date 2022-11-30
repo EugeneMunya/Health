@@ -44,7 +44,7 @@ const initialValues={
 
 const Register = () => {
 
-    const [register,{data,isSuccess,isLoading,isError,error}]=useRegisterMutation()
+    const [register,{data,isSuccess,isLoading}]=useRegisterMutation()
     const dispatch=useDispatch()
     const location = useLocation()
     const redirec = location.state?.path|| '/dashboard'

@@ -23,7 +23,7 @@ import Header from '../../components/Header/Header';
 
 const Login = () => {
 
-    const [login,{data,isLoading,isSuccess,isError,error}]=useLoginMutation()
+    const [login,{data,isLoading,isSuccess}]=useLoginMutation()
     const dispatch =useDispatch()
     const location = useLocation()
     const redirec = location.state?.path|| '/dashboard'
