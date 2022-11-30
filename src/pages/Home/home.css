@@ -1,0 +1,12 @@
+.book_card a{
+    text-decoration: none;
+    display: inline-block;
+    height: 32px;
+    width: 100%;
+    text-align: center;
+    background-color: #28a745;
+    padding: 4px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 40px;
+}

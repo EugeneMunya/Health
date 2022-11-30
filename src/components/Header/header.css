@@ -1,0 +1,48 @@
+
+nav{
+    position: fixed;
+    border-bottom:1px solid #28a745;
+    width: 100%;
+    z-index: 10000;
+}
+.nav_menu{
+    height: 100%;
+    position: relative;
+}
+
+.nav_menu a{
+height: 100%;
+}
+.nav_menu .active{
+    font-weight: bolder;
+    color: black;
+}
+.auth_nav a{
+    border: 1px solid #28a745;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 25px;
+
+}
+
+.hero_nav a {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    padding: 8px 20px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.hero_nav a:hover {
+    background-color: rgba(234, 220, 220, 0.298);
+    color: #28a745;
+    transition: all .4s;
+}
