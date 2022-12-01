@@ -1,6 +1,7 @@
 import { Flex, Heading,Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import {AiFillPlayCircle} from 'react-icons/ai'
+import {MdVideoLibrary} from 'react-icons/md'
+
 const VideoItem = (props)=>{
     const {children,play,...rest}=props
     return <Flex 
@@ -12,12 +13,10 @@ const VideoItem = (props)=>{
      borderBottom="1px solid rgb(234, 220, 220)"
      cursor="pointer"
      >
-        <AiFillPlayCircle color='#28a745' size={50}/>
+        <MdVideoLibrary color='#33ae84' size={30}/>
         <Text
         letterSpacing="tight"
         fontSize={["12px","12px","15px"]}
-        fontWeight="bold"
-        color="#28a745"
         >{children}</Text>
     </Flex>
 }
@@ -29,29 +28,30 @@ const VideoStream = () => {
     return (
         <Flex 
         flexDir="column"
+        px='10%'
+        py={50}
         >
-         <Heading
-         textAlign="center"
-         color="#28a745"
-         pb={10}
-         >Helpful videos</Heading>
-
-         <Flex bg="#fff" 
-         width="100%"
-         px="10%"
+         <Flex 
          py={5}
          >
-         <Flex gap={2}
+
+         <Flex gap={20}
          width="100%" 
           flexDir={['column','column','row']}
          >
-            <Flex color="#fff" 
-             w="40%"
+            <Flex
+             gap={5}
              flexDir="column">
+            <Flex flexDir='column' gap={5}>
+            <Text color="#33ae84">-HOW TOs</Text>
+            <Heading fontSize='30px' fontFamily='inherit'>Helpful videos</Heading>
+            </Flex>
+            <Flex flexDir='column'>
             <VideoItem play={playVideo}>Self help video</VideoItem>
             <VideoItem play={playVideo}>Self help video</VideoItem>
             <VideoItem play={playVideo}>Self help video</VideoItem>
             <VideoItem play={playVideo}>Self help video</VideoItem>
+            </Flex>
          </Flex>
          <Flex bg="black"
           h={300} 

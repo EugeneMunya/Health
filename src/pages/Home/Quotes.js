@@ -7,11 +7,13 @@ const Quotes = () => {
          flexDir="column"
          pb={5}
          px="10%"
+         py={100}
          >
              <Heading
          textAlign={['flex-start','flex-start','center']}
          pb={5}
-         color="#28a745"
+         fontFamily='inherit'
+         
          >Helpful quotes</Heading>
            <VStack bg="#fff" w="60%" p={5}
             borderRadius="8px">

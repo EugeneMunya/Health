@@ -1,30 +1,30 @@
 import {  Card, CardBody, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import {BiRightArrow,BiLeftArrow} from 'react-icons/bi'
-
+import Trick from '../../assets/triks.jpg'
+import Tips from '../../assets/tips.jpg'
 const Blog = () => {
     return (
-        <Flex flexDir="column"  
-        p={5}>
-    <Heading
-         textAlign="center"
-         pb={5}
-         color="#28a745"
-         >Our blog</Heading>
+        <Flex 
+        px="10%"
+        flexDir="column" 
+        py={100} 
+        gap={20}
+        >
+
+          <Flex gap={4} flexDir='column' align='center'>
+            <Text color='#33ae84'>-RECENT BLOG</Text>
+          <Heading fontFamily='inherit' fontSize='30px'>Get Latest Tips & Tricks</Heading>
+          </Flex>
 
             <Flex
-             w="auto"
-            justifyContent="center"
-            alignItems="center"
             flexDir={['column','column','row']}
             gap={5}
             >
- <Card maxW='300px'
- bg="#fff"
- >
-  <CardBody>
+      <Card maxW='300px'bg="#fff">
+        <CardBody>
     <Image
-      src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+      src={Trick}
       alt='Green double couch with wooden legs'
       borderRadius='lg'
     />
@@ -42,7 +42,7 @@ const Blog = () => {
 <Card maxW='300px'  bg="#fff">
   <CardBody>
     <Image
-      src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+      src={Tips}
       alt='Green double couch with wooden legs'
       borderRadius='lg'
     />
@@ -74,7 +74,7 @@ const Blog = () => {
   </CardBody>
 </Card>
 </Flex> 
-    <Flex gap={50} pt={10} justifyContent="center">
+    <Flex gap={20} justifyContent="center">
     <BiLeftArrow/>
    <BiRightArrow/>
 </Flex>

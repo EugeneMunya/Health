@@ -3,11 +3,16 @@ import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Hero from '../../components/Header/Hero';
+import Available from './Available';
 import Blog from './Blog';
+import Booking from './Booking';
 import Books from './Books';
+import Intro from './Intro';
 import Quotes from './Quotes';
+import Testimonials from './Testimonials';
 import VideoStream from './VideoStream';
 import WhatWeDo from './WhatWeDo';
+import Whoweare from './Whoweare';
 
 const Home = () => {
     return (
@@ -18,12 +23,17 @@ const Home = () => {
         >
             <Header/>
             <Hero/>
-            <Flex as="section" gap={50} flexDir="column" >
+            <Flex as="section" flexDir="column" >
             <WhatWeDo/>
+            <Available/>
+            <Intro/>
+            <Whoweare/>
             <VideoStream/>
             <Blog/>
             <Books/>
             <Quotes/>
+            <Testimonials/>
+            <Booking/>
             </Flex>
             <Footer/>
             

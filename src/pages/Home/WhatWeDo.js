@@ -1,6 +1,7 @@
 import { Flex,Heading,Text,Image, Stack } from '@chakra-ui/react';
 import React from 'react';
-import {FaChild,FaUserCheck,FaUsers} from 'react-icons/fa'
+import {FaChild,FaUserCheck} from 'react-icons/fa'
+import {HiUsers} from 'react-icons/hi'
 import Talk from '../../assets/couseling.jpg';
 
 
@@ -33,17 +34,13 @@ const WhatWeDo = () => {
              >
                 <Text
                   letterSpacing="tight"
-                    fontSize="13px"
-                    fontWeight="600"
-                    color="#28a745"
+                    color="#33ae84"
                     textTransform="uppercase"
-                >WhatWeDo</Text>
+                >-WhatWeDo</Text>
                 <Heading
                 letterSpacing="tight"
-                    fontSize="25px"
-                    fontWeight="700"
-                    color="#303"
-                    pb={5}
+                    fontSize="30px"
+                    fontFamily='inherit'
                 >
                     The best counselling from best psychologists
                 </Heading>
@@ -55,10 +52,12 @@ const WhatWeDo = () => {
                 <FaChild color='#28a745' size={50}/>
                 <Flex flexDir="column">
                     <Heading
+
                     letterSpacing="tight"
                     fontSize="20px"
                     fontWeight="600"
                     color="#303"
+                    fontFamily='inherit'
                     >Children Therapy</Heading>
                     <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry</Text>
                 </Flex>
@@ -77,6 +76,7 @@ const WhatWeDo = () => {
                     fontSize="20px"
                     fontWeight="600"
                     color="#303"
+                    fontFamily='inherit'
                     >Individual Coaching</Heading>
                     <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry</Text>
                 </Flex>
@@ -86,19 +86,19 @@ const WhatWeDo = () => {
               shadow="base"
               p={2}
               >
-                <FaUsers color='#28a745' size={50}/>
+                <HiUsers color='#28a745' size={50}/>
                 <Flex flexDir="column">
                     <Heading
                     letterSpacing="tight"
                     fontSize="20px"
                     fontWeight="600"
                     color="#303"
+                    fontFamily='inherit'
                     >Couple Therapy</Heading>
                     <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry</Text>
                 </Flex>
             </Stack>
              </Flex>
-           
         </Flex>
     );
 };

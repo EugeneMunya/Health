@@ -4,9 +4,21 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-    
+    font-family: 'Philosopher', sans-serif; 
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Philosopher', sans-serif;
 }
 
 body{
     min-height: 100vh;
+    font-family: 'Philosopher', sans-serif;
+}
+.chakra-heading{
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+n{
+    background-color: rgba(229, 229, 229, 0.813);
 }

@@ -17,14 +17,17 @@ import ForgotPassword from '../pages/Auth/ForgotPassword';
 import ResetPassword from '../pages/Auth/ResetPassword';
 import { ProtectRoutes } from '../components/ProtectRoutes/ProtectRoutes';
 import DashHome from '../components/Dashboard/DashHome';
+import About from '../pages/About';
+import Services from '../pages/Services';
+import Contact from '../pages/Contact';
 
 const Routers = () => {
     return (
         <Routes>
             <Route index element={<Home/>}/>
-            <Route path='/services' element={<Home/>}/>
-            <Route path='/about' element={<Home/>}/>
-            <Route path='/contact' element={<Home/>}/>
+            <Route path='/services' element={<Services/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/contact' element={<Contact/>}/>
             <Route path='/login'  element={<Login/>}/>
             <Route path='/register'  element={<Register/>}/>
             <Route path='/survey'  element={<FormSurvey/>}/>

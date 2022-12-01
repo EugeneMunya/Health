@@ -24,8 +24,7 @@ const Hero = () => {
             color='#fff'
             alignSelf="flex-start"
             maxW="600px"
-            
-
+            fontFamily='inherit'
             h={['auto','auto',null]}
             >Make your mental health a priority</Heading>
             <Text
