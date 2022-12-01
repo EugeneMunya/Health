@@ -10,7 +10,7 @@ const Booking = () => {
         justify='center'
         >
             <Flex flexDir='column'  gap={5}>
-                <Text >-WHO WE ARE</Text>
+                <Text >-REACHOUT</Text>
                 <Heading fontSize='30px' fontFamily='inherit'>Book An Appointment Now</Heading>
                 <Flex flexDir='column' gap={5}>
                     <Input placeholder='name' borderColor='#33ae84'/>

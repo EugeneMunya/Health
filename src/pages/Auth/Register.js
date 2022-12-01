@@ -17,15 +17,11 @@ const initialValues={
     password:'',
     confirmPassword:'',
     occupation:'',
-    linkedinlink:'',
-    cvlink:''
    }
    const validationSchema = Yup.object({
     firstName:Yup.string().required('Required'),
     lastName:Yup.string().required('Required'),
     occupation:Yup.string().required('Required'),
-    linkedinlink:Yup.string().required('Required'),
-    cvlink:Yup.string().required('Required'),
     phone:Yup.string().length(10).required('Required').min(10),
     email:Yup.string().required('Email required').email('Not a proper email'),
     confirmPassword:Yup.string().oneOf([
@@ -174,27 +170,6 @@ const Register = () => {
                 <option value='client'>Psychiatrist</option>
                 </Select>
             {formik.touched['occupation']&& formik.errors['occupation']? <Box color='red.400'>{formik.errors['occupation']}</Box>:null}
-                </FormControl>
-
-                <FormControl borderColor="#5BFFB7">
-                <FormLabel>Google doc link for your CV</FormLabel>
-                <Input type='text'
-                name='cvlink'
-                value={formik.values['cvlink']}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                />
-            {formik.touched['cvlink']&& formik.errors['cvlink']? <Box color='red.400'>{formik.errors['cvlink']}</Box>:null}
-                </FormControl>
-                 <FormControl borderColor="#5BFFB7">
-                <FormLabel>Your linkedIn profile link</FormLabel>
-                <Input type='text'
-                name='linkedinlink'
-                value={formik.values['linkedinlink']}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                />
-            {formik.touched['linkedinlink']&& formik.errors['linkedinlink']? <Box color='red.400'>{formik.errors['linkedinlink']}</Box>:null}
                 </FormControl>
 
                 <Button 
