@@ -17,7 +17,7 @@ const About = () => {
             <Flex
             bgColor='#33ae84'
             h={250}
-            align='center'
+            align={['flex-end','flex-end','center']}
             justify='center'
             color='#fff'
             fontSize='20px'
