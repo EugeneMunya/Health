@@ -17,7 +17,7 @@ const Contact = () => {
             <Flex
             bgColor='#33ae84'
             h={250}
-            align='center'
+            align={['flex-end','flex-end','center']}
             justify='center'
             color='#fff'
             fontSize='20px'
@@ -27,8 +27,8 @@ const Contact = () => {
             </Flex>
 
 
-            <Flex px='10%' py='60px'>
-                <Flex gap={10} boxShadow='md' p='6' rounded='md' bg='white' w='50%' flexDir='column'>
+            <Flex px='10%' py='60px' flexDir={['column','column','row']}>
+                <Flex gap={10} boxShadow='md' p='6' rounded='md' bg='white' w={['100%','100%','50%']} flexDir='column'>
                     <Flex flexDir='column' gap={5} >
                         <Heading fontSize='20px' fontFamily='inherit'>
                         Get in touch
@@ -48,7 +48,7 @@ const Contact = () => {
                         <Text>Fax : +6221.2002.2013</Text>
                         </Flex>
                     </Flex>
-                    <Flex>
+                    <Flex flexDir='column'>
                         <Heading fontSize='20px' fontFamily='inherit'>Email us</Heading>
                         <Text>support@yourdomain.tld</Text>
                         <Text>hello@yourdomain.tld</Text>
