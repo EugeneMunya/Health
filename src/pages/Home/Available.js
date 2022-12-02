@@ -16,16 +16,16 @@ const Available = () => {
             <Flex
             flexDir='column'
             color='#fff'
-            w={450}
+            w={['100%','100%','40%']}
             gap="20px"
             pb={10}
             >
-                <Text letterSpacing='normal' fontWeight='hairline' fontSize={20}>-AVAILABLE 24/7</Text>
+                <Text fontSize={20}>-AVAILABLE 24/7</Text>
                 <Heading
                 fontFamily='inherit'
                 fontSize='40px'
                 >We are Always Ready For A Challenge</Heading>
-                <Button w={300} borderRadius={30} _hover={{color:'none'}} bgColor='#ffbc0a'>Book an appointment</Button>
+                <Button w={[200,200]} borderRadius={30} _hover={{color:'none'}} bgColor='#ffbc0a'>Book an appointment</Button>
             </Flex>
             <Flex 
             flexDir='column'
