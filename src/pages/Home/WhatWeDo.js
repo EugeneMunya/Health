@@ -17,7 +17,7 @@ const WhatWeDo = () => {
         gap={50}
         align={['flex-start','flex-start','center']} 
         >
-            <Flex bg="#f5f5f5" maxW={["100%","100%","100%"]}>
+            <Flex display={['none','none','block']} bg="#f5f5f5" maxW={["100%","100%","100%"]}>
             <Image
     boxSize={["700","700","auto"]}
     objectFit='cover'
