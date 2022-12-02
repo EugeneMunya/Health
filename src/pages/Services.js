@@ -21,7 +21,7 @@ const Services = () => {
             <Flex
             bgColor='#33ae84'
             h={250}
-            align='center'
+            align={['flex-end','flex-end','center']}
             justify='center'
             color='#fff'
             fontSize='20px'
@@ -38,7 +38,7 @@ const Services = () => {
         py={50}
         flexDir='column'
        >
-        <Flex gap={10}>
+        <Flex gap={10} flexDir={['column','column','row']}>
         <Flex flexDir='column' gap={5}>
             <Text color="#33ae84">OUR SERVICES</Text>
             <Heading fontSize='25px' fontFamily='inherit'>We want you to get the care you deserve.</Heading>
@@ -46,21 +46,21 @@ const Services = () => {
             <Button color="#fff" w={300} borderRadius={30} _hover={{color:'none'}} bgColor='#33ae84'>Discover more</Button>
 
         </Flex>
-        <Flex>
+        <Flex display={['none','none','block']}>
             <Image src={serviceImg}/>
         </Flex>
         </Flex>
 
 
-        <Flex justify='center' align='center' flexDir='column' gap={10}>
-            <Flex gap={5} w={600} justify='center' align='center' flexDir='column'>
+        <Flex justify={['flex-start','flex-start','center']} align={['flex-start','flex-start','center']} flexDir='column' gap={10}>
+            <Flex gap={5}  justify={['left','left','center']} align={['flex-start','flex-start','center']} flexDir='column'>
                 <Text color='#33ae84'>WHAT WE OFFER</Text>
-                <Heading fontSize='30px' fontFamily='inherit' textAlign='center'>Get treatment for all your mental healthcare needs.</Heading>
+                <Heading fontSize='30px' fontFamily='inherit' textAlign={['left','left','center']}>Get treatment for all your mental healthcare needs.</Heading>
             </Flex>
-            <Flex>
-     
 
-       <Card maxW='300px'bg="#fff">
+            <Flex flexDir={['column','column','row']}>
+    
+       <Card maxW={['100%','100%','300px']} bg="#fff">
         <CardBody>
     <Image
       src={Onep}
@@ -75,7 +75,7 @@ const Services = () => {
         sprinkle of vintage .........
       </Text>
     </Stack> </CardBody></Card>
-       <Card maxW='300px'bg="#fff">
+       <Card maxW={['100%','100%','300px']} bg="#fff">
         <CardBody>
     <Image
       src={Kids}
@@ -91,7 +91,7 @@ const Services = () => {
       </Text>
     </Stack> </CardBody></Card>
     
-       <Card maxW='300px'bg="#fff">
+       <Card maxW={['100%','100%','300px']} bg="#fff">
         <CardBody>
     <Image
       src={Couple}
