@@ -29,7 +29,6 @@ const WhatWeDo = () => {
  </Flex>
             
 <Flex flexDir="column" 
-            p={[10,10,10]}
              maxW={["100%","100%","100%"]}
              gap={5}
              >

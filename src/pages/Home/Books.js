@@ -25,15 +25,15 @@ const Books = () => {
           pt={10}
           flexDir={['column','column','row']}
           >
-              <Card maxW={250} h={300} bg="#fff">
+              <Card maxW={['100%','100%',250]} bg="#fff">
   <CardBody className='book_card'>
-    <HStack gap={2}>
+    <Flex gap={2}>
         <FaBook color='#33ae84' size="60px"/>
         <Heading 
         letterSpacing="tight"
         fontSize="16px"
         >View a summary of all your customers.</Heading>
-    </HStack>
+    </Flex>
     <Text pt={5}>
         Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text.
     </Text>
@@ -41,7 +41,7 @@ const Books = () => {
   </CardBody>
 </Card>
 
-    <Card maxW={250} h={300} bg="#fff">
+    <Card maxW={['100%','100%',250]} bg="#fff">
   <CardBody className='book_card'>
     <HStack gap={2}>
         <FaBook color='#33ae84' size="60px"/>
@@ -56,7 +56,7 @@ const Books = () => {
     <a href="/images/myw3schoolsimage.jpg" download="w3logo">Download</a>
   </CardBody>
 </Card>
-   <Card maxW={250} h={300} bg="#fff">
+   <Card maxW={['100%','100%',250]} bg="#fff">
   <CardBody className='book_card'>
     <HStack gap={2}>
         <FaBook color='#33ae84' size="60px"/>
@@ -71,7 +71,7 @@ const Books = () => {
     <a href="/images/myw3schoolsimage.jpg" download="w3logo">Download</a>
   </CardBody>
 </Card>
-   <Card maxW={250} h={300} bg="#fff">
+   <Card maxW={['100%','100%',250]} h={300} bg="#fff">
   <CardBody className='book_card'>
     <HStack gap={2}>
         <FaBook color='#33ae84' size="60px"/>
@@ -88,7 +88,7 @@ const Books = () => {
 </Card>
   </Flex>
       
-<Flex gap={50} justifyContent={['flex-start','flex-start','center']}>
+<Flex  justifyContent={['space-between','space-between','center']}>
     <BiLeftArrow/>
    <BiRightArrow/>
 </Flex>

@@ -1,4 +1,4 @@
-import { Flex, Heading, VStack,Text } from '@chakra-ui/react';
+import { Flex, Heading,Text } from '@chakra-ui/react';
 import React from 'react';
 import {BiRightArrow,BiLeftArrow} from 'react-icons/bi'
 const Quotes = () => {
@@ -14,23 +14,25 @@ const Quotes = () => {
          pb={5}
          fontFamily='inherit'
          >Helpful quotes</Heading>
-           <VStack bg="#fff" w={['auto','auto','80%']} p={5}
+           <Flex gap={5} flexDir='column'  bg="#fff" w={['100%','100%','80%']} p={5}
             borderRadius="8px">
             <Text
             fontStyle="italic"
             pb={5}
             fontSize="20px"
+            textAlign={['center']}
             >
                 The way to get started is to quit talking and begin doing. 
             </Text>
             <Heading
+            textAlign={['center']}
              fontSize="16px"
             >~Walt Disney</Heading>
-            <Flex gap={50}>
+            <Flex justify={['center']} gap={50}>
                 <BiLeftArrow/>
                 <BiRightArrow/>
             </Flex>
-           </VStack>
+           </Flex>
         </Flex>
     );
 };

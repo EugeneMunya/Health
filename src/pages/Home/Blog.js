@@ -22,7 +22,7 @@ const Blog = () => {
             flexDir={['column','column','row']}
             gap={[2,2,5]}
             >
-      <Card maxW='300px'bg="#fff">
+      <Card maxW={['100%','100%',300]}bg="#fff">
         <CardBody>
     <Image
       src={Trick}
@@ -40,7 +40,7 @@ const Blog = () => {
   </CardBody>
 </Card>
 
-<Card maxW='300px'  bg="#fff">
+<Card maxW={['100%','100%',300]}  bg="#fff">
   <CardBody>
     <Image
       src={Tips}
@@ -57,7 +57,7 @@ const Blog = () => {
     </Stack>
   </CardBody>
 </Card>
-<Card maxW='300px'  bg="#fff">
+<Card maxW={['100%','100%',300]}  bg="#fff">
   <CardBody>
     <Image
       src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
@@ -75,7 +75,7 @@ const Blog = () => {
   </CardBody>
 </Card>
 </Flex> 
-    <Flex gap={20} justifyContent={['flex-start','flex-start','center']}>
+    <Flex gap={20} justifyContent={['space-between','space-between','center']}>
     <BiLeftArrow/>
    <BiRightArrow/>
 </Flex>

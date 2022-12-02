@@ -12,7 +12,7 @@ const Intro = () => {
         py={50}
         flexDir={['column','column','row']}
         >
-            <Flex w='60%' >
+            <Flex w={['auto','auto','60%']} >
               <ReactPlayer width='100%' url='https://youtu.be/tS7f7d5KOso' />
             </Flex>
 
