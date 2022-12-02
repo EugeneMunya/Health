@@ -3,7 +3,7 @@ import React from 'react';
 import {BiRightArrow,BiLeftArrow} from 'react-icons/bi'
 const Quotes = () => {
     return (
-        <Flex alignItems="center"
+        <Flex alignItems={['flex-start','flex-start','center']}
          flexDir="column"
          pb={5}
          px="10%"
@@ -13,9 +13,8 @@ const Quotes = () => {
          textAlign={['flex-start','flex-start','center']}
          pb={5}
          fontFamily='inherit'
-         
          >Helpful quotes</Heading>
-           <VStack bg="#fff" w="60%" p={5}
+           <VStack bg="#fff" w={['auto','auto','80%']} p={5}
             borderRadius="8px">
             <Text
             fontStyle="italic"

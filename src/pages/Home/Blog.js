@@ -7,19 +7,20 @@ const Blog = () => {
     return (
         <Flex 
         px="10%"
-        flexDir="column" 
+        flexDir="column"
+
         py={100} 
-        gap={20}
+        gap={[10,10,20]}
         >
 
-          <Flex gap={4} flexDir='column' align='center'>
+          <Flex gap={4} flexDir='column' align={['flex-start','flex-start','center']}>
             <Text color='#33ae84'>-RECENT BLOG</Text>
           <Heading fontFamily='inherit' fontSize='30px'>Get Latest Tips & Tricks</Heading>
           </Flex>
 
             <Flex
             flexDir={['column','column','row']}
-            gap={5}
+            gap={[2,2,5]}
             >
       <Card maxW='300px'bg="#fff">
         <CardBody>
@@ -74,7 +75,7 @@ const Blog = () => {
   </CardBody>
 </Card>
 </Flex> 
-    <Flex gap={20} justifyContent="center">
+    <Flex gap={20} justifyContent={['flex-start','flex-start','center']}>
     <BiLeftArrow/>
    <BiRightArrow/>
 </Flex>

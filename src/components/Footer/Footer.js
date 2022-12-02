@@ -8,8 +8,8 @@ const Footer = () => {
        <Flex 
        flexDir='column'
        >
-        <Flex color='#fff' bgColor='#33ae84' gap={10} p='20px'>
-            <Flex gap={5} flexDir='column' w={400}>
+        <Flex py={[10,10,10]} px={['10%','10%','20px']} flexDir={['column','column','row']} color='#fff' bgColor='#33ae84' gap={20}>
+            <Flex gap={10} flexDir='column' w={400}>
                 <Heading fontSize='18px' fontFamily='inherit'>BAHO</Heading>
                 <Text>
                     in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.
@@ -65,7 +65,7 @@ const Footer = () => {
         </Flex>
 
 
-        <Flex h='60px' justify='center' align='center'>
+        <Flex px={['10%','10%','1']} h='60px' justify={['flex-start','flex-start','center']} align='center'>
             <Text>Copyright © 2023 KLAB All rights reserved</Text>
         </Flex>
        </Flex>

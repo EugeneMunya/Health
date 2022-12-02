@@ -7,10 +7,11 @@ const Available = () => {
         <Flex
         bgColor="#33ae84"
         className="avalable"
-        gap={100}
-        justify='space-between'
+        gap={['10','10','100']}
+        justify={['flex-start','flex-start','space-between']}
         px='10%'
         py={100}
+        flexDir={['column','column','row']}
         >
             <Flex
             flexDir='column'
@@ -29,8 +30,9 @@ const Available = () => {
             <Flex 
             flexDir='column'
             gap={10}
+            justify={['flex-start','flex-start','normal']}
             >
-                <Flex flexDir='column' align='center' justify='center' >
+                <Flex flexDir='column' align={['flex-start','flex-start','center']} justify='center' >
                     <Heading 
                     letterSpacing='tight'
                     color="#fff"
@@ -46,7 +48,7 @@ const Available = () => {
                     
                     >Satisfied Customers</Text>
                 </Flex>
-                <Flex flexDir='column' align='center' justify='center'>
+                <Flex flexDir='column' align={['flex-start','flex-start','center']}  justify='center'>
                     <Heading
                     letterSpacing='tight'
                     color="#fff"
@@ -60,7 +62,7 @@ const Available = () => {
             </Flex>
 
             <Flex flexDir='column' gap={10}>
-                <Flex flexDir='column' align='center' justify='center'>
+                <Flex flexDir='column' align={['flex-start','flex-start','center']}  justify='center'>
                     <Heading
                     letterSpacing='tight'
                     color="#fff"
@@ -71,7 +73,7 @@ const Available = () => {
                     </Heading>
                     <Text letterSpacing='tight' fontSize="20px" color='#ffbc0a'>Project Completed</Text>
                 </Flex>
-                <Flex flexDir='column' align='center' justify='center'>
+                <Flex flexDir='column' align={['flex-start','flex-start','center']}  justify='center'>
                     <Heading
                      letterSpacing='tight'
                     color="#fff"

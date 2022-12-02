@@ -1,4 +1,4 @@
-import { Button, Flex,Heading,Skeleton,Text } from '@chakra-ui/react';
+import { Button, Flex,Heading,Text } from '@chakra-ui/react';
 import React from 'react';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import ReactPlayer from 'react-player'
@@ -10,6 +10,7 @@ const Intro = () => {
         px='10%'
         gap={100}
         py={50}
+        flexDir={['column','column','row']}
         >
             <Flex w='60%' >
               <ReactPlayer width='100%' url='https://youtu.be/tS7f7d5KOso' />
@@ -23,7 +24,7 @@ const Intro = () => {
                 <Text>Mauris cursus posuere sem non fermentum donec condime ntum, nibh ut viverra molestie, urna dui convallis 
                     tortor, sed dignissim arcu ex sed</Text>
                </Flex>
-                    <Flex gap={20} align='center'>
+                    <Flex gap={[10,10,20]} flexDir={['column','column','row']}  align={['flex-start','flex-start','center']} >
                         <Flex flexDir='column'>
                             {/* one part */}
                             <Flex gap={3}>

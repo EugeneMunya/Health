@@ -35,7 +35,7 @@ const VideoStream = () => {
          py={5}
          >
 
-         <Flex gap={20}
+         <Flex gap={[10,10,20]}
          width="100%" 
           flexDir={['column','column','row']}
          >
@@ -55,7 +55,7 @@ const VideoStream = () => {
          </Flex>
          <Flex bg="black"
           h={300} 
-         w="55%">
+         w={['100%','100%','50%']}>
             {video.url}
          </Flex>
          </Flex>

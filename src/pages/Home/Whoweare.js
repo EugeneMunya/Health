@@ -11,6 +11,7 @@ const Whoweare = () => {
         px='10%'
         py={100}
         gap={5}
+        flexDir={['column','column','row']}
         >
             <Flex gap={5} w='50%' flexDir='column'>
                 <Text color='#33ae84'>-WHO WE ARE</Text>
@@ -25,7 +26,7 @@ libero venenatis hendrerit vestibulum euismod, lacus.</Text>
                             MORE THERAPIES
                             </Text></Button>
             </Flex>
-            <Flex gap={20}>
+            <Flex gap={20} flexDir={['column','column','row']}>
                 <Flex pt={50} flexDir='column' gap={10}>
     <Image className='profile'
     boxSize='200px'

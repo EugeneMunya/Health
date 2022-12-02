@@ -9,19 +9,15 @@ const Books = () => {
           <Flex 
         flexDir="column"
         px='10%'
+        gap={[10,10,20]}
         >
          <Heading
          fontSize='30px'
          fontFamily='inherit'
          letterSpacing="tight"
-         textAlign='center'
+         textAlign={['left','left','center']}
          >Selfhelp books </Heading>
-         
-         <Flex 
-         h={['auto','auto','400px']}
-         >
 
-            {/* main */}
 
         <Flex 
           color="#fff" 
@@ -32,7 +28,7 @@ const Books = () => {
               <Card maxW={250} h={300} bg="#fff">
   <CardBody className='book_card'>
     <HStack gap={2}>
-        <FaBook color='#28a745' size="60px"/>
+        <FaBook color='#33ae84' size="60px"/>
         <Heading 
         letterSpacing="tight"
         fontSize="16px"
@@ -48,7 +44,7 @@ const Books = () => {
     <Card maxW={250} h={300} bg="#fff">
   <CardBody className='book_card'>
     <HStack gap={2}>
-        <FaBook color='#28a745' size="60px"/>
+        <FaBook color='#33ae84' size="60px"/>
         <Heading 
         letterSpacing="tight"
         fontSize="16px"
@@ -63,7 +59,7 @@ const Books = () => {
    <Card maxW={250} h={300} bg="#fff">
   <CardBody className='book_card'>
     <HStack gap={2}>
-        <FaBook color='#28a745' size="60px"/>
+        <FaBook color='#33ae84' size="60px"/>
         <Heading 
         letterSpacing="tight"
         fontSize="16px"
@@ -78,7 +74,7 @@ const Books = () => {
    <Card maxW={250} h={300} bg="#fff">
   <CardBody className='book_card'>
     <HStack gap={2}>
-        <FaBook color='#28a745' size="60px"/>
+        <FaBook color='#33ae84' size="60px"/>
         <Heading 
         letterSpacing="tight"
         fontSize="16px"
@@ -90,10 +86,9 @@ const Books = () => {
     <a href="/images/myw3schoolsimage.jpg" download="w3logo">Download</a>
   </CardBody>
 </Card>
-         </Flex>
-        
-         </Flex>
-      <Flex gap={50} justifyContent="center">
+  </Flex>
+      
+<Flex gap={50} justifyContent={['flex-start','flex-start','center']}>
     <BiLeftArrow/>
    <BiRightArrow/>
 </Flex>

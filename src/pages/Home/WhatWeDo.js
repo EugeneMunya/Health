@@ -15,6 +15,7 @@ const WhatWeDo = () => {
         px="10%"
         py={5}
         gap={50}
+        align={['flex-start','flex-start','center']} 
         >
             <Flex bg="#f5f5f5" maxW={["100%","100%","100%"]}>
             <Image
@@ -49,7 +50,7 @@ const WhatWeDo = () => {
             shadow="base"
             p={2}
              >
-                <FaChild color='#28a745' size={50}/>
+                <FaChild color='#33ae84' size={50}/>
                 <Flex flexDir="column">
                     <Heading
 
@@ -69,7 +70,7 @@ const WhatWeDo = () => {
                shadow="base"
                p={2}
                >
-                <FaUserCheck color='#28a745' size={50}/>
+                <FaUserCheck color='#33ae84' size={50}/>
                 <Flex flexDir="column">
                     <Heading
                     letterSpacing="tight"
@@ -86,7 +87,7 @@ const WhatWeDo = () => {
               shadow="base"
               p={2}
               >
-                <HiUsers color='#28a745' size={50}/>
+                <HiUsers color='#33ae84' size={50}/>
                 <Flex flexDir="column">
                     <Heading
                     letterSpacing="tight"
