@@ -16,7 +16,7 @@ const Available = () => {
             <Flex
             flexDir='column'
             color='#fff'
-            w={400}
+            w={450}
             gap="20px"
             pb={10}
             >

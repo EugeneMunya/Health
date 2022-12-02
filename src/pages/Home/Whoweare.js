@@ -13,7 +13,7 @@ const Whoweare = () => {
         gap={5}
         flexDir={['column','column','row']}
         >
-            <Flex gap={5} w='50%' flexDir='column'>
+            <Flex gap={5} w={['100%','100%','50%']} flexDir='column'>
                 <Text color='#33ae84'>-WHO WE ARE</Text>
                 <Heading fontSize='30px' fontFamily='inherit'>Meet Our Psychiatrist Team</Heading>
                 <Text>Etiam scelerisque nec elit ac efficitur. Duis vestibulum magna

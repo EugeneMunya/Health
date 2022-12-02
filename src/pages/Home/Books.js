@@ -88,7 +88,7 @@ const Books = () => {
 </Card>
   </Flex>
       
-<Flex  justifyContent={['space-between','space-between','center']}>
+<Flex gap={100}  justifyContent={['space-between','space-between','center']}>
     <BiLeftArrow/>
    <BiRightArrow/>
 </Flex>
